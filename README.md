@@ -1,1 +1,5 @@
 # database-project
+
+## Collaborators:
+
+- Jordan
