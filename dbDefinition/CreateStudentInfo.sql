@@ -10,4 +10,8 @@ CREATE TABLE [dbo].[StudentInfo]
   Motivation [varchar](1000),
   Transcript [varchar](1000),
   StudentStatus [int],
+  CONSTRAINT PK_StudentID PRIMARY KEY CLUSTERED ([StudentID]),
+  --CONSTRAINT FK_StudentID_HODID FOREIGN KEY ([HODID]) REFERENCES [dbo].[HOD]
 );
+
+GO
