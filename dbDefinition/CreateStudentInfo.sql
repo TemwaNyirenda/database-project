@@ -11,8 +11,8 @@ CREATE TABLE [dbo].[StudentInfo]
   Transcript [varchar](1000) NOT NULL,
   StudentStatus [int] NOT NULL,
   CONSTRAINT PK_StudentID PRIMARY KEY CLUSTERED ([StudentID]),
-  -- CONSTRAINT FK_StudentInfo_HOD FOREIGN KEY ([HODID]) REFERENCES [dbo].[HOD]
-  -- CONSTRAINT FK_StudentInfo_ApprovalStatusIndex FOREIGN KEY ([StudentStatus]) REFERENCES [dbo].[HOD]
+  -- CONSTRAINT FK_HOD_StudentInfo FOREIGN KEY ([HODID]) REFERENCES [dbo].[HOD]
+  -- CONSTRAINT FK_ApprovalStatusIndex_StudentInfo FOREIGN KEY ([StudentStatus]) REFERENCES [dbo].[HOD]
 );
 
 GO
