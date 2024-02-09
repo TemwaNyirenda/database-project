@@ -1,5 +1,6 @@
 CREATE TABLE [dbo].[BBDTotalAllocation]
 (
   YearId [int] UNIQUE,
-  Amount [money]
+  Amount [money],
+  CONSTRAINT PK_YearId PRIMARY KEY CLUSTERED ([YearId]),
 );
