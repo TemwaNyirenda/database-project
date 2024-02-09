@@ -4,3 +4,5 @@ CREATE TABLE [dbo].[BBDTotalAllocation]
   Amount [money],
   CONSTRAINT PK_YearId PRIMARY KEY CLUSTERED ([YearId]),
 );
+
+GO
