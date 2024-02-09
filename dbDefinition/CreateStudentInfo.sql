@@ -2,16 +2,17 @@ CREATE TABLE [dbo].[StudentInfo]
 (
   StudentID [int] IDENTITY(1,1),
   HODID [int],
-  IDNumber [varchar](13),
-  Race [varchar],
-  StudentFirstName [varchar](100),
-  StudentLastName [varchar](100),
-  FinalYear [binary](1),
-  Motivation [varchar](1000),
-  Transcript [varchar](1000),
-  StudentStatus [int],
+  IDNumber [varchar](13) NOT NULL,
+  Race [varchar] NOT NULL,
+  StudentFirstName [varchar](100) NOT NULL,
+  StudentLastName [varchar](100) NOT NULL,
+  FinalYear [binary](1) NOT NULL,
+  Motivation [varchar](1000) NOT NULL,
+  Transcript [varchar](1000) NOT NULL,
+  StudentStatus [int] NOT NULL,
   CONSTRAINT PK_StudentID PRIMARY KEY CLUSTERED ([StudentID]),
-  --CONSTRAINT FK_StudentID_HODID FOREIGN KEY ([HODID]) REFERENCES [dbo].[HOD]
+  --CONSTRAINT FK_StudentInfo_HODID FOREIGN KEY ([HODID]) REFERENCES [dbo].[HOD]
+  --CONSTRAINT FK_StudentInfo_StudentStatus FOREIGN KEY ([StudentStatus]) REFERENCES [dbo].[HOD]
 );
 
 GO
