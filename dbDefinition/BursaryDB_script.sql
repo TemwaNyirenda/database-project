@@ -1,0 +1,5 @@
+CREATE DATABASE BursaryDB;
+GO
+
+USE BursaryDB;
+GO
