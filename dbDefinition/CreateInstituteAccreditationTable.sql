@@ -1,7 +1,7 @@
 CREATE TABLE [Institute_Accreditation]
 (
-  [AccreditationID] INT,
-  [InstituteID] MONEY NOT NULL,
+  [AccreditationID] INT NOT NULL,
+  [InstituteID] INT NOT NULL,
 );
 
 GO
