@@ -4,13 +4,13 @@ CREATE TABLE [dbo].[Bursary_Applicant_Grades] (
     [Grade] DECIMAL NOT NULL,
     [BursaryFundID] INT NOT NULL,
     
-    CONSTRAINT FK_BursaryApplicantGrades_BursaryApplicantID
+    CONSTRAINT [FK_BursaryApplicantGrades_BursaryApplicantID]
         FOREIGN KEY ([BursaryApplicantID])
         REFERENCES [dbo].[Bursary_Applicants]([BursaryApplicantID]),
-    CONSTRAINT FK_BursaryApplicantGrades_CourseID
+    CONSTRAINT [FK_BursaryApplicantGrades_CourseID]
         FOREIGN KEY ([CourseID])
         REFERENCES [Courses]([CourseID]),
-    CONSTRAINT FK_BursaryApplicantGrades_BursaryFundID
+    CONSTRAINT [FK_BursaryApplicantGrades_BursaryFundID]
         FOREIGN KEY ([BursaryFundID])
         REFERENCES [Bursary_Fund]([BursaryFundID])
 );
