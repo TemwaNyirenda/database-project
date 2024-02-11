@@ -1,7 +1,7 @@
 CREATE TABLE [dbo].[Accreditation]
 (
-    [Accreditation] [int] NOT NULL,
-    [Name] [varchar] NOT NULL,
-    CONSTRAINT PK_Accreditation PRIMARY KEY CLUSTERED ([Accreditation]),
+    [AccreditationID] INT IDENTITY(1,1) NOT NULL,
+    [Name] VARCHAR(100) NOT NULL,
+    CONSTRAINT [PK_AccreditationID] PRIMARY KEY CLUSTERED ([AccreditationID]),
 );
 GO
