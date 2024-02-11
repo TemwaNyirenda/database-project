@@ -14,11 +14,11 @@ ADD CONSTRAINT [PK_StudentID] PRIMARY KEY CLUSTERED ([StudentID])
 GO
 
 ALTER TABLE [Student]
-ADD CONSTRAINT [FK_Race_Student] FOREIGN KEY ([RaceID]) REFERENCES [dbo].[Race]([RaceID])
+ADD CONSTRAINT [FK_Student_Race] FOREIGN KEY ([RaceID]) REFERENCES [dbo].[Race]([RaceID])
 
 GO
 
 ALTER TABLE [Student]
-ADD CONSTRAINT [FK_User_Details_Student] FOREIGN KEY ([UserID]) REFERENCES [dbo].[User_Details]([UserID])
+ADD CONSTRAINT [FK_Student_UserDetails] FOREIGN KEY ([UserID]) REFERENCES [dbo].[User_Details]([UserID])
 
 GO

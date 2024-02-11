@@ -7,6 +7,7 @@ CREATE TABLE [Bursary_Fund]
 GO
 
 ALTER TABLE [Bursary_Fund]
-ADD CONSTRAINT [PK_BursaryFund] PRIMARY KEY CLUSTERED ([BursaryFundID])
+ADD CONSTRAINT [PK_BursaryFund] 
+PRIMARY KEY CLUSTERED ([BursaryFundID])
 
 GO
