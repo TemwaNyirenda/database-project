@@ -1,9 +1,9 @@
 CREATE TABLE [Student]
 (
-  [StudentID] INT IDENTITY(1,1),
-  [UserID] INT,
-  [ID_Number] INT(13) NOT NULL,
-  [RaceID] INT,
+  [StudentID] INT IDENTITY(1,1) NOT NULL,
+  [UserID] INT NOT NULL,
+  [ID_Number] CHAR(13) NOT NULL,
+  [RaceID] INT NOT NULL,
 );
 
 GO
