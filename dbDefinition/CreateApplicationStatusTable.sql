@@ -1,7 +1,7 @@
 CREATE TABLE [Application_Status]
 (
-  [Index] INT IDENTITY(1,1),
-  [Status] VARCHAR NOT NULL,
+  [Index] INT IDENTITY(1,1) NOT NULL,
+  [Status] VARCHAR(8) NOT NULL,
 );
 
 GO
