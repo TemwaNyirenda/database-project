@@ -1,6 +1,6 @@
 CREATE TABLE [Bursary_Fund]
 (
-  [BursaryFundID] INT IDENTITY(2024,1),
+  [BursaryFundID] INT IDENTITY(2024,1) NOT NULL,
   [FundAmount] MONEY NOT NULL,
 );
 
