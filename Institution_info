@@ -1,5 +1,0 @@
-CREATE TABLE Institution_info (
-    InstitutionID INT PRIMARY KEY,
-    InstitutionName NVARCHAR(100),
-    BursaryStatus INT,
-);

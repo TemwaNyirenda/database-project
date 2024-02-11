@@ -1,6 +1,0 @@
-CREATE TABLE YearlyAllocation (
-    YearID INT,
-    ALLOCATED_BUDGET DECIMAL(18, 2),
-    InstitutionID INT,
-    FOREIGN KEY (InstitutionID) REFERENCES Institution_info(InstitutionID)
-);
