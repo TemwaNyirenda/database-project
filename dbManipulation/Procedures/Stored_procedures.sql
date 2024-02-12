@@ -1,3 +1,7 @@
+USE BBD_BursaryDB;
+
+GO
+
 -- Stored procedure to get students by their race
 CREATE PROCEDURE [GetStudentsByRace]
     @RaceID INT

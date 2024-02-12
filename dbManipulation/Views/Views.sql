@@ -1,3 +1,7 @@
+USE BBD_BursaryDB;
+
+GO
+
 -- View Applicants with grades
 CREATE VIEW [View_BursaryApplicantsWithGrades]
 AS

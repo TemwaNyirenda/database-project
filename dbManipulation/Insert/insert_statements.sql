@@ -1,5 +1,6 @@
 -- Inserting into Race table
-USE newDB;
+USE BBD_BursaryDB;
+
 GO
 
 INSERT INTO [dbo].[Race]

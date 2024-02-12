@@ -1,3 +1,7 @@
+USE BBD_BursaryDB;
+
+GO
+
 CREATE VIEW vAllContactInfo
 AS
 SELECT

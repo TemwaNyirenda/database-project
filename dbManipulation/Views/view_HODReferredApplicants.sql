@@ -1,3 +1,7 @@
+USE BBD_BursaryDB;
+
+GO
+
 CREATE VIEW vHODReferredApplicants
 AS
     SELECT

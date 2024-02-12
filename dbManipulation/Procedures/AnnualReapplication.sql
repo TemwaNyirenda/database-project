@@ -1,3 +1,7 @@
+USE BBD_BursaryDB;
+
+GO
+
 CREATE PROCEDURE dbo.AnnualReapplication
 AS
 BEGIN
