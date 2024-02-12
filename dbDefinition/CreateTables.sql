@@ -54,7 +54,7 @@ GO
  
 CREATE TABLE [dbo].[Contact_Details] (
 	[ContactDetailsID] INT IDENTITY(1,1) NOT NULL,
-	[PhoneNumber] CHAR(10) NOT NULL,
+	[PhoneNumber] VARCHAR(12) NOT NULL,
 	[Email] VARCHAR(320) NOT NULL,
 );
  
