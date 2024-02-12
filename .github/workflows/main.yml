@@ -9,25 +9,25 @@ on:
 jobs:
     build:
         runs-on: windows-latest
-        # steps:
-        #  - uses: actions/checkout@v1
-        #  - uses: azure/login@v1.5.1
-        #    with:
-        #     creds: ${{ secrets.AZURE_CREDENTIALS }}
-        #  - uses: azure/sql-action@v2
-        #    with:
-        #     connection-string: ${{ secrets.AZURE_SQL_CONNECTION_STRING }}
-        #     path: './dbDefinition/*.sql'
-
-
-        defaults:
-            run:
-                working-directory: ./dbDefinition
         steps:
-        - uses: actions/checkout@v1
-        - uses: azure/login@v1 
-        - run: ./CreateTables.sql
-        - run: ./TableConstarints.sql
+         - uses: actions/checkout@v1
+         - uses: azure/login@v1.5.1
+           with:
+            creds: ${{ secrets.AZURE_CREDENTIALS }}
+         - uses: azure/sql-action@v2
+           with:
+            connection-string: ${{ secrets.AZURE_SQL_CONNECTION_STRING }}
+            path: './dbDefinition/CreateTables.sql'
+
+
+        # defaults:
+        #     run:
+        #         working-directory: ./dbDefinition
+        # steps:
+        # - uses: actions/checkout@v1
+        # - uses: azure/login@v1 
+        # - run: ./CreateTables.sql
+        # - run: ./TableConstarints.sql
     
     # # Azure logout 
     #  - name: logout
