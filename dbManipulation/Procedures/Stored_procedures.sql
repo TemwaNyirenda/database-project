@@ -1,8 +1,9 @@
+-- Stored procedure to get students by their race
 CREATE PROCEDURE [GetStudentsByRace]
     @RaceID INT
 AS
 BEGIN
-    SELECT [StudentID], [FirstName], [LastName], [RaceID], [DateOfBirth]
+    SELECT [StudentID], [RaceID], [ID_Number]
     FROM [Student]
     WHERE [RaceID] = @RaceID;
 END;
@@ -13,7 +14,7 @@ CREATE PROCEDURE [GetCoursesByInstituteID]
     @InstituteID INT
 AS
 BEGIN
-    SELECT [CourseID], [CourseName], [InstituteID], [StartDate], [EndDate]
+    SELECT [CourseID], [CourseName], [InstituteID]
     FROM [Courses]
     WHERE [InstituteID] = @InstituteID;
 END;
