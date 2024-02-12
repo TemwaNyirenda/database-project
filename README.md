@@ -37,7 +37,3 @@ BBD Bursary Manager is an app that makes it easier to manage bursary funds given
 
 - The app will be updated using GitHub actions
 - Every time code is pushed to the GitHub repo, it will automatically update the server database
-
-## License and Credits
-
-- The app will be licensed through BBD Software
