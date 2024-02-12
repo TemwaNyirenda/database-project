@@ -17,7 +17,7 @@ jobs:
          - uses: azure/sql-action@v2
            with:
             connection-string: ${{ secrets.AZURE_SQL_CONNECTION_STRING }}
-            path: './dbDefinition'
+            path: './dbDefinition/*.sql'
     
             # Azure logout 
          - name: logout
