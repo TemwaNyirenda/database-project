@@ -26,10 +26,6 @@ jobs:
            with:
             connection-string: ${{ secrets.AZURE_SQL_CONNECTION_STRING }}
             path: './dbManipulation/Insert/insert_statements.sql'
-         - uses: azure/sql-action@v2
-           with:
-            connection-string: ${{ secrets.AZURE_SQL_CONNECTION_STRING }}
-            path: './dbManipulation/Views/*.sql'
 
     
     # Azure logout 
