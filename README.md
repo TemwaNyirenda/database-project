@@ -1,7 +1,3 @@
-# database-project
-*Bursary Allocations
- 
-=======
 # BBD Bursary Manager
 
 BBD Bursary Manager is an app that makes it easier to manage bursary funds given out to universities by BBD Software.
