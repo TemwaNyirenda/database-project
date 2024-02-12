@@ -140,17 +140,17 @@ VALUES
 	GO
 -- Inserting into Head_Of_Department table
 INSERT INTO [dbo].[Head_Of_Department]
-  ([InstituteID], [UserID], [ContactDetailsID])
+  ([InstituteID], [UserID])
 VALUES
-  (1, 1, 1),
-  (2, 4, 2),
-  (3, 5, 3),
-  (4, 8, 4),
-  (5, 11, 5),
-  (6, 15, 6),
-  (7, 17, 7),
-  (8, 21, 8),
-  (9, 23, 9);
+  (1, 1),
+  (2, 4),
+  (3, 5),
+  (4, 8),
+  (5, 11),
+  (6, 15),
+  (7, 17),
+  (8, 21),
+  (9, 23);
 	GO
 -- Inserting into Institution_Fund_Allocation table
 INSERT INTO [dbo].[Institution_Fund_Allocation]
@@ -194,7 +194,7 @@ VALUES
   ('Mathematics', 9),
   ('Psychology', 10);
 
-	GO
+GO
 
 
 -- Inserting into Bursary_Applicants table
@@ -205,6 +205,7 @@ VALUES
   (2, 5, 25000.00, 0, 'Demonstrated leadership skills and active involvement in extracurricular activities showcase initiative and commitment.', 2),
   (3, 6, 30000.00, 1, 'Overcoming significant challenges highlights resilience and determination to succeed against adversity.', 2),
   (4, 7, 35000.00, 0, 'Contribution to the community through volunteering reflects a spirit of service and social responsibility.', 1),
+  (5, 8, 40000.00, 1, 'Unique talents or achievements distinguish the student, enriching our academic community.', 2),
   (6, 10, 20000.00, 0, 'Financial need combined with a strong academic record underscores the students deserving candidacy.', 3),
   (7, 11, 25000.00, 1, 'Demonstrated passion for their field of study indicates a genuine commitment to personal and professional growth.', 3),
   (8, 12, 30000.00, 0, 'Positive attitude and eagerness to learn suggest a promising future and a desire to make a meaningful impact.', 2),
@@ -215,9 +216,9 @@ VALUES
 INSERT INTO [dbo].[Bursary_Applicant_Grades]
   ([CourseID], [Grade], [BursaryFundID])
 VALUES
-  ( 1, 80.5, 2024),
-  ( 1, 90.5, 2024),
-  ( 1, 100, 2024),
+  (1, 1, 80.5, 2024),
+  (1, 1, 90.5, 2024),
+  (1, 1, 100, 2024),
   (2, 85.2, 2024),
   (2, 75.2, 2024),
   (2, 86.2, 2024),
