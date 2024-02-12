@@ -18,18 +18,17 @@ jobs:
            with:
             connection-string: ${{ secrets.AZURE_SQL_CONNECTION_STRING }}
             path: './dbDefinition/CreateTables.sql'
+         - uses: azure/sql-action@v2
+           with:
+            connection-string: ${{ secrets.AZURE_SQL_CONNECTION_STRING }}
+            path: './dbDefinition/TableConstarints.sql'
+         - uses: azure/sql-action@v2
+           with:
+            connection-string: ${{ secrets.AZURE_SQL_CONNECTION_STRING }}
+            path: './dbManipulation/Insert/insert_statements.sql'
 
-
-        # defaults:
-        #     run:
-        #         working-directory: ./dbDefinition
-        # steps:
-        # - uses: actions/checkout@v1
-        # - uses: azure/login@v1 
-        # - run: ./CreateTables.sql
-        # - run: ./TableConstarints.sql
     
-    # # Azure logout 
-    #  - name: logout
-    #    run: |
-    #           az logout
+    # Azure logout 
+         - name: logout
+           run: |
+              az logout
