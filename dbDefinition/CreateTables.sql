@@ -65,14 +65,14 @@ CREATE TABLE [dbo].[Courses](
     CourseName [VARCHAR](100) NOT NULL,
     InstituteID [int] NOT NULL,
 );
- 
+
 GO
- 
-CREATE TABLE [dbo].[Head_Of_Department] (
-    [HeadOfDepartmentID] INT IDENTITY(1,1) NOT NULL,
-    [InstituteID] INT NOT NULL,
-    [UserID] INT NOT NULL,
-    [ContactDetailsID] INT NOT NULL,
+
+CREATE TABLE [dbo].[Head_Of_Department]
+(
+  [HeadOfDepartmentID] INT IDENTITY(1,1) NOT NULL,
+  [InstituteID] INT NOT NULL,
+  [UserID] INT NOT NULL,
 );
  
 GO
