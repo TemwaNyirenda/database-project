@@ -1,8 +1,8 @@
-CREATE DATABASE newDB
+CREATE DATABASE BBD_BursaryDB
 
 GO
 
-USE newDB;
+USE BBD_BursaryDB;
 
 GO 
  
