@@ -1,15 +1,3 @@
-
--- Stored Procedure Example
-CREATE PROCEDURE [GetStudentsByRace]
-    @RaceID INT
-AS
-BEGIN
-    SELECT * FROM [Student] WHERE [RaceID] = @RaceID;
-END;
-GO
-
-
-
 -- View Applicants with grades
 CREATE VIEW [View_BursaryApplicantsWithGrades]
 AS
@@ -37,17 +25,7 @@ JOIN
 GO
 
 
--- Stored procedure to get courses by institute ID
-CREATE PROCEDURE [GetCoursesByInstituteID]
-    @InstituteID INT
-AS
-BEGIN
-    SELECT * FROM [Courses] WHERE [InstituteID] = @InstituteID;
-END;
-GO
-
-
--- View to retrieve allocation details along with institute and fund information
+--View the Institution with their allocation details
 CREATE VIEW [View_AllocationDetails]
 AS
 SELECT 
