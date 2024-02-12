@@ -1,3 +1,7 @@
+USE BBD_BursaryDB;
+
+GO
+
 CREATE VIEW PendingStudents
 AS
   SELECT S.[StudentID], U.[FirstName], U.[LastName], B.[BursaryApplicantStatus]
