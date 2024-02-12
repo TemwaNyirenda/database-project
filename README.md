@@ -41,4 +41,3 @@ BBD Bursary Manager is an app that makes it easier to manage bursary funds given
 ## License and Credits
 
 - The app will be licensed through BBD Software
-- The Database was developed by Boipelo Morokolo, Noluthando Gumede, Jordan Beaumont and Temwa Nyirenda
