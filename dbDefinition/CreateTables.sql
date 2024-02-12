@@ -32,7 +32,7 @@ CREATE TABLE [dbo].[Bursary_Applicants]
 
 CREATE TABLE [dbo].[Bursary_Applicant_Grades]
 (
-  [BursaryApplicantID] INT IDENTITY(1,1) NOT NULL,
+  [BursaryApplicantID] INT NOT NULL,
   [CourseID] INT NOT NULL,
   [Grade] DECIMAL NOT NULL,
   [BursaryFundID] INT NOT NULL,
