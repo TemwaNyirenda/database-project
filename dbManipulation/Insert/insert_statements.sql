@@ -143,17 +143,17 @@ VALUES
 	
 -- Inserting into Head_Of_Department table
 INSERT INTO [dbo].[Head_Of_Department]
-  ([InstituteID], [UserID], [ContactDetailsID])
+  ([InstituteID], [UserID])
 VALUES
-  (1, 1, 1),
-  (2, 4, 2),
-  (3, 5, 3),
-  (4, 8, 4),
-  (5, 11, 5),
-  (6, 15, 6),
-  (7, 17, 7),
-  (8, 21, 8),
-  (9, 23, 9);
+  (1, 1),
+  (2, 4),
+  (3, 5),
+  (4, 8),
+  (5, 11),
+  (6, 15),
+  (7, 17),
+  (8, 21),
+  (9, 23);
 	
 -- Inserting into Institution_Fund_Allocation table
 INSERT INTO [dbo].[Institution_Fund_Allocation]
