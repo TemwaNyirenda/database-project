@@ -1,15 +1,15 @@
 CREATE VIEW AcceptedStudents
 AS
-  SELECT S.[StudentID], U.[FirstName], U.[LastName], B.[BursaryApplicationStatus]
+  SELECT S.[StudentID], U.[FirstName], U.[LastName], B.[BursaryApplicantStatus]
   FROM (
-    [Students] AS S
+    [Student] AS S
     INNER JOIN [User_Details] AS U
     ON S.[UserID] = U.[UserID]
     )
     INNER JOIN (
     [Bursary_Applicants] AS B
     INNER JOIN [Application_Status] AS A
-    ON B.[Bursary_ApplicantsStatus] = A.[Index]
+    ON B.[BursaryApplicantStatus] = A.[Index]
     )
-    ON [StudentID] = [StudentID]
-  WHERE B.[BursaryApplicationStatus] = ('accepted');
+    ON B.[StudentID] = A.[Index]
+  WHERE A.[Status] = ('accepted');
