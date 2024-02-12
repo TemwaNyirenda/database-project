@@ -1,4 +1,4 @@
-USE newDB;
+USE BBD_BursaryDB;
 
 GO 
 
