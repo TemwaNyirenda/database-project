@@ -2,7 +2,7 @@ CREATE VIEW AcceptedStudents
 AS
   SELECT S.[StudentID], U.[FirstName], U.[LastName], B.[BursaryApplicationStatus]
   FROM (
-    [Students] AS S
+    [Student] AS S
     INNER JOIN [User_Details] AS U
     ON S.[UserID] = U.[UserID]
     )
