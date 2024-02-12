@@ -24,12 +24,9 @@ jobs:
             run:
                 working-directory: ./dbDefinition
         steps:
-        - name: Log in
         - uses: actions/checkout@v1
         - uses: azure/login@v1 
-        - name: Run a table creation
         - run: ./CreateTables.sql
-        - name: Run constraints
         - run: ./TableConstarints.sql
     
     # # Azure logout 
